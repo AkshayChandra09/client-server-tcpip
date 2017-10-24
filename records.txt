@@ -1,0 +1,21 @@
+CourseID	Course Name				Regs	Vecant	Sem
+
+CS5301		Programming Practicum			30	0	Fall2017
+
+CS5310		Network and Communication Systems	25	4	Fall2017
+
+CS5318		Principles of Programming Languages	11	6	Fall2016
+
+CS5389		Graphical User Interface		32	0	Summ2017
+
+CS5391		Surv Soft Engg				28	2	Fall2016
+
+CS5393		Software Quality			16	3	Fall2017
+
+CS5374		Neural Networks				20	4	Spr2018
+
+CS5346		Artificial Intelligence			32	0	Fall2017
+
+CS5332		Database Design & Anl			27	3	Spr2017
+
+MG4335		Strategy Management			45	1	Spr2016

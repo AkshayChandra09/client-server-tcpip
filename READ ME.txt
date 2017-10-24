@@ -1,0 +1,108 @@
+********************* READ ME ***************************
+Student Name: Akshay Chandrachood
+
+XXXX id: XXXXXXXX
+XXXX id: XXXXXXXXXX
+*********************************************************
+
+Commands to Compile and Run Server+Client .C files
+
+gcc server.c -o server
+./server
+
+gcc client.c -o client
+./client server_name
+
+________________________________________________________________________
+
+About Project:
+=============
+
+Establishing client-server communication using TCP/IP. 
+
+Server has a database of courses. Each course's information includes the
+following:
+
+Course name (e.g. advanced operating systems), Course ID (e.g. CS5306), 
+Number of students registered, Number of vacancies left, Time offered 
+(e.g. Fall 2017) 
+
+The client is able to do the following:
+
+1.List All: the client can send a request to the server to list all the 
+courses in the database.
+
+2. Search: the client can send a request to the server to search for the
+detailed information of a course using course name, course ID, and time 
+offered. For example,if the client types the name of the course: 
+"Advanced Operating Systems" or its ID CS5306, the server will reply with 
+all the course's information. If the client types "Fall 2017", the server 
+will reply with all the courses offered in Fall 2017.  
+
+3.Add: the client can send a request to the server to add
+a new course to the database.
+
+4.Delete: the client can send a request to the server to delete
+a course from the database by the name of the course.
+
+_____________________________________________________________________________
+
+Details:
+=======
+
+1. Download the zip folder. Unzip it to your working direcory.
+2. Navigate to your working directory. eg If file is located 
+inside OS directory which is inside public_html. 
+Type: cd public_html/
+      cd OS
+Type: ls  To check if you can see the extracted files/ensure 
+you are in the same directory.
+
+3. Open two terminal windows. One for running the client side
+and one for the server side.
+eg. You can login to eros.cs.txstate.edu and consider it as server
+(either is fine). And you can login to "zeus" and consider it
+ as client.
+
+4. To compile server file 
+Type: gcc server.c -o server
+To Run server file
+Type: ./server 
+  
+5. To compile client file 
+Type: gcc client.c -o client
+To Run client file
+Type: ./client server_name  
+
+eg. If server is "eros" and client is "zeus"
+Then to run client, type:
+
+./client eros.cs.txstate.edu on the "zues" command prompt.
+
+_______________________________________________________________________
+
+Notes:
+======
+
+1. Always start the Server first.
+2. Always stop the client first.
+3. Records.txt file holds the database of the courses. 
+4. If you face problems with Add/Delete function of the program please
+   check the permissions for Records.txt.
+5. To check/change the permissions-> right click on the file (Records.txt)
+   go to properties and check on R, W, X for Owner, Group and Others.
+6. To keep the Records.txt database in a specified format.
+   Please follow standard input format. 
+7. Recommended input format:
+	i. Course ID: String. Ideal length: 6 words. eg CS5301, CS5310 etc 
+    	   Don't use space in between this string. 
+	ii. Course Name: Any string with whitespaces
+	    eg Advanced Operating System
+	iii. No of students registerd: Integer
+	iv. No of vecancies/seats available: Integer
+	v. Time offered: String. Ideal length: 8 words. eg Fall2017/Summ2017/Spr2017
+
+	 
+
+
+ 
